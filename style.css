@@ -5,10 +5,11 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
+/* add font to the page */
 body{
     font-family: 'Roboto', sans-serif;
 }
-
+/* Header */
 header{
     background-image:  linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(img/fond.jpg)  ;
     padding: 10px 200px 20px 150px;
@@ -19,6 +20,7 @@ header{
     background-position: center;
     background-size: cover;
 }
+/* first header container */
 .con1{
     display: flex;
     align-items: center;
@@ -27,17 +29,18 @@ header{
     color: #f9faf8;
 }
 
+/* header links */
 a{
     text-decoration: none;
     margin: 0;
-    padding: 0; 
+    padding: 0;
 }
 
 .links{
     color: #f9faf8;
-    font-size: 18px; 
+    font-size: 18px;
 }
-
+/* header list */
 ul{
     list-style: none;
     display: flex;
@@ -46,11 +49,13 @@ ul{
     gap: 10px;
 }
 
+/* header logo */
 .logo{
     font-size: 24px;
     font-weight: bold;
 }
 
+/* second header container */
 .con2{
     flex: 1;
     display: flex;
@@ -58,7 +63,7 @@ ul{
     gap: 20px;
 
 }
-
+/* big title section in the midle */
 .titulo{
     display: flex;
     flex-direction: column;
@@ -68,17 +73,18 @@ ul{
     gap: 5px;
 }
 
+/* actual title */
 h1{
     font-size: 48px;
     font-weight: bolder;
-    
 }
+/* paragraph below title */
 .p1{
   font-size: 18px;
   color: #e5e7eb;
-
 }
 
+/* sign in button, this has some atributes for both butons */
 button{
     display: flex;
     padding: 7px 30px;
@@ -86,13 +92,14 @@ button{
     font-size: 15px;
     font-weight: 800;
 }
+/* especific atributes to the first sign in button */
 .sign{
     background-color: #FF3228;
     border-color: #FF3228;
     color: white;
     border-style: solid;
 }
-
+/* image in the header nest to the title */
 .imagen{
     background-image: url(img/hero.jpg);
     height: 220px;
@@ -100,13 +107,13 @@ button{
     flex: 1;
     background-size: cover;
 }
-
+/* second block o the landing page */
 .random{
     padding: 30px 200px 20px 150px;
     background-color: #FFFFFF;
-    height: 400px;
+    height: 420px;
 }
-
+/* firt text in the section */
 .some{
     text-align: center;
     margin-bottom: 80px;
@@ -114,13 +121,14 @@ button{
     font-size: 35px;
     font-weight: bolder;
 }
-
+/* family of pics  */
 .pics{
     display: flex;
     gap: 30px;
     align-items: flex-start;
     justify-content: center;
 }
+/* indivudual section of the pics with the description */
 .pic{
     flex: 1;
     display: flex;
@@ -129,18 +137,94 @@ button{
     align-items: center;
     gap: 10px;
 }
+/* each imagen of the pic section */
 img{
     max-width: 100px;
     padding: 20px;
-    border-style: solid;
+    /* border-style: solid;
     border-radius: 25px;
     border-color: #FF3228;
-    border-width: 4px;
+    border-width: 4px; */
     flex: 1;
 }
-
+/* hover efect on the pictures */
+:hover.pic{
+    background-color:#FFDAD9 ;
+    border-radius: 20px;
+}
+/* the description of the images from the pic */
 .text{
     max-width: 140px ;
     text-align: center;
+}
+/* block number three */
+.quote{
+    height: 350px;
+    background-color: #C3BFD9;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    padding: 30px 250px 30px 200px;
+}
+/* author of the quote */
+.span{
+    text-align: right;
+    font-weight: bolder;
+    font-size: 25px;
+}
 
+/* block number 4 */
+.call{
+    padding: 0 140px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* call to action  */
+.callcon{
+    background-color: #FF3228;
+    background: linear-gradient(to bottom left, #FF3228, #f06d06);
+    padding: 20px 112px;
+    height: 90px;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 3px 3px 5px grey;
+}
+
+/* callto action text */
+.llama{
+    color: white;
+}
+
+h4{
+    font-size: 30px;
+}
+/* claa to action button */
+.s2{
+background-color: #FF3228;
+color:white;
+background:  linear-gradient(to top right, #FF3228, #f06d06);
+border-color: white;
+padding: 9px 40px;
+}
+/* the footer */
+footer{
+    height: 69px;
+    background-color: #020311;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+/* add pointer to the buttons */
+.sign{
+    cursor: pointer;
 }
